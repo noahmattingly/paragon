@@ -1,5 +1,5 @@
-/* THESE are the files when using logos
-import brownLogo from '@/assets/colleges/brown.svg';
+//THESE are the files when using logos
+import brownLogo from '@/assets/colleges/brownlogo.png';
 import dukeLogo from '@/assets/colleges/duke.svg';
 import georgemasonLogo from '@/assets/colleges/georgemason.svg';
 import georgetownLogo from '@/assets/colleges/georgetown.svg';
@@ -10,25 +10,26 @@ import iitLogo from '@/assets/colleges/iitlogo.png';
 import mcgillLogo from '@/assets/colleges/mcgill.svg';
 import mitLogo from '@/assets/colleges/mit.svg';
 import pennLogo from '@/assets/colleges/penn.svg';
-import princetonLogo from '@/assets/colleges/princeton.svg';
+import princetonLogo from '@/assets/colleges/princetonlogo.png';
 import risdLogo from '@/assets/colleges/risd.svg';
-import stanfordLogo from '@/assets/colleges/stanford.svg';
-import ubcLogo from '@/assets/colleges/ubclogo.png';
+import stanfordLogo from '@/assets/colleges/stanfordlogo.png';
+import ubcLogo from '@/assets/colleges/ubc.svg';
 import ucbLogo from '@/assets/colleges/ucb.svg';
 import uchicagoLogo from '@/assets/colleges/uchicago.svg';
 import uciLogo from '@/assets/colleges/uci.svg';
 import uclaLogo from '@/assets/colleges/ucla.svg';
 import ucsdLogo from '@/assets/colleges/ucsdlogo.png';
-import ugaLogo from '@/assets/colleges/uga.png';
+import ugaLogo from '@/assets/colleges/ugalogo.png';
 import umaineLogo from '@/assets/colleges/umaine.svg';
 import untLogo from '@/assets/colleges/unt.svg';
-import uscLogo from '@/assets/colleges/usc.svg';
+import uscLogo from '@/assets/colleges/usclogo.png';
 import yaleLogo from '@/assets/colleges/yale.svg';
 import utaLogo from '@/assets/colleges/uta.svg';
 import uillinoisucLogo from '@/assets/colleges/uillinois-uc.svg';
-*/
+import cabriniLogo from '@/assets/colleges/cabrinilogo.png';
 
 //these are the files when using seals
+/*
 import brownLogo from '@/assets/colleges/brown.png';
 import dukeLogo from '@/assets/colleges/duke.png';
 import georgemasonLogo from '@/assets/colleges/georgemason.png';
@@ -56,6 +57,7 @@ import uscLogo from '@/assets/colleges/usc.png';
 import yaleLogo from '@/assets/colleges/yale.png';
 import utaLogo from '@/assets/colleges/uta.png';
 import uillinoisucLogo from '@/assets/colleges/uillinois-uc.png';
+*/
 
 // import maricopaLogo from '@/assets/governments/Maricopa.png';
 import brownsvilleLogo from '@/assets/governments/Brownsville.png';
@@ -80,6 +82,10 @@ import MadisonLogo from '@/assets/governments/Madison.png';
 import MissoulaLogo from '@/assets/governments/Missoula.png';
 import MontanaSITSDLogo from '@/assets/governments/Montana SITSD.png';
 import USStateLogo from '@/assets/governments/US State Logo.png';
+//import FortCollinsLogo from '@/assets/governments/Fort Collins.png';
+//import BismarckLogo from '@/assets/governments/Bismarck.png';
+//import PennsylvaniaLogo from '@/assets/governments/Pennsylvania.png';
+//import USVILogo from '@/assets/governments/USVI.png';
 import { StaticImageData } from 'next/image';
 //San Jose,
 //Santa Clara County, 
@@ -108,23 +114,23 @@ export const governments: {
     //     logo: maricopaLogo
     // },
     brownsville: {
-        name: 'Brownsville',
+        name: 'Brownsville, Texas',
         logo: brownsvilleLogo
     },
     boston: {
-        name: 'Boston',
+        name: 'Boston, Massachusetts',
         logo: bostonLogo
     },
     stLouis: {
-        name: 'St. Louis',
+        name: 'St. Louis, Missouri',
         logo: stLouisLogo
     },
     georgia: {
-        name: 'Georgia',
+        name: 'Georgia Technology Authority',
         logo: georgiaLogo
     },
     losAngeles: {
-        name: 'Los Angeles',
+        name: 'Los Angeles, California',
         logo: losAngelesLogo
     },
     // southBend: {
@@ -148,53 +154,70 @@ export const governments: {
     //     logo: doeLogo
     // },
     tempe: {
-        name: 'Tempe',
+        name: 'Tempe, Arizona',
         logo: tempeLogo
     },
     santaClara: {
-        name: 'Santa Clara',
+        name: 'Santa Clara County, California',
         logo: santaClaraLogo
     },
     sanJose: {
-        name: 'San Jose',
+        name: 'San Jose, California',
         logo: sanJoseLogo
     },
     lebanon: {
-        name: 'Lebanon',
+        name: 'Lebanon, New Hampshire',
         logo: lebanonLogo
     },
     Albequerque: {
-        name: 'Albequerque',
+        name: 'Albuquerque, New Mexico',
         logo: AlbuquerqueLogo
     }, 
     Alexandria: {
-        name: 'Alexandria',
+        name: 'Alexandria, Virginia',
         logo: AlexandriaLogo
     },
     CDII: {
-        name: 'CDII',
+        name: 'California Center for Data Insights and Innovation',
         logo: CDIILogo
     },
     // Fortlauderdale: {
-    //     name: 'Fortlauderdale',
+    //     name: 'Fortlauderdale, Florida',
     //     logo: FortlauderdaleLogo
     // },
     Madison: {
-        name: 'Madison',
+        name: 'Madison, Wisconsin',
         logo: MadisonLogo
     },
     Missoula: {
-        name: 'Missoula',
+        name: 'Missoula, Montana',
         logo: MissoulaLogo
     },
     MontanaSITSD: {
-        name: 'MontanaSITSD',
+        name: 'Montana State Information Technology Services Division',
         logo: MontanaSITSDLogo
     },
     USStateDepartment: {
-        name: 'US Department of State',
+        name: 'U.S. Department of State',
         logo: USStateLogo
     }
+	//,
+	//Bismarck: {
+    //    name: 'Bismarck, North Dakota',
+    //    logo: BismarckLogo
+    //},
+	//FortCollins: {
+    //    name: 'Fort Collins, Colorado',
+    //    logo: FortCollinsLogo
+    //},
+	//Pennsylvania: {
+    //    name: 'Pennsylvania',
+    //    logo: PennsylvaniaLogo
+    //},
+	//USVI: {
+    //    name: 'U.S. Virgin Islands Next Generation Network',
+    //    logo: USVILogo
+    //}
 };
 
 export const colleges: {
@@ -310,6 +333,10 @@ export const colleges: {
 	uillinoisuc: {
         name: 'University of Illinois at Urbana-Champaign',
         logo: uillinoisucLogo
+    },
+	cabrini: {
+        name: 'Cabrini College',
+        logo: cabriniLogo
     }
 }
 
